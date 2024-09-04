@@ -3,9 +3,7 @@
 ## Introduction
 ADMET (Absorption, Distribution, Metabolism, Excretion, and Toxicity) is a critical concept in the field of drug discovery, particularly for the development of new cancer therapeutics. This comprehensive evaluation of a drug candidate's pharmacokinetic and toxicological properties is a crucial step in the early stages of the drug discovery process, as it directly informs the suitability of a compound for further development and clinical testing (Kola & Landis, 2004).
 
-## Main Body
-
-### Results
+### Why ADMET?
 The "ADME" components of ADMET describe how a drug molecule behaves within the body after administration. Understanding a potential cancer drug's absorption, distribution, metabolism, and excretion is essential for predicting its efficacy and safety profile (Kerns & Di, 2008). For example, if a drug has poor absorption, it may not achieve sufficient concentrations at the tumor site to be effective. Conversely, if a drug has a long half-life and accumulates in certain tissues, it could lead to undesirable toxicities. By evaluating these ADME parameters, researchers can identify and optimize drug candidates with the most favorable pharmacokinetic characteristics.
 
 The "T" in ADMET refers to the assessment of a drug's potential toxicity, both at the cellular and organismal level. In the context of cancer drug discovery, evaluating toxicity is particularly crucial, as many chemotherapeutic agents have a narrow therapeutic index (Kola & Landis, 2004). By carefully assessing the toxicity profile of a drug candidate, researchers can identify potential safety issues and optimize the drug's properties to maximize the therapeutic window and minimize the risk of severe side effects.
