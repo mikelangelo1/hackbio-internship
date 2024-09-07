@@ -1,4 +1,4 @@
-# Comprehensive Review of ```Benchmarking AlphaFold‐enabled Molecular Docking Predictions for Antibiotic Discovery1```
+# Comprehensive Review of ```Benchmarking AlphaFold‐enabled Molecular Docking Predictions for Antibiotic Discovery```
 
 [Click here to watch the video](https://youtu.be/DjSeMZIijaU)
 
