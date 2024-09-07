@@ -1,5 +1,7 @@
 # Comprehensive Review of ```Benchmarking AlphaFold‐enabled Molecular Docking Predictions for Antibiotic Discovery1```
 
+[Click here to watch the video](https://youtu.be/DjSeMZIijaU)
+
 ![Local image](./images/header.png)
 
 The paper titled "Benchmarking AlphaFold‐enabled molecular docking predictions for antibiotic discovery" presents a significant advancement in the field of drug discovery, particularly focusing on antibiotic development. The authors, including Felix Wong and Aarti Krishnan, explore the integration of AlphaFold2, a state-of-the-art protein structure prediction tool, with molecular docking simulations to enhance the prediction of protein-ligand interactions.
@@ -24,7 +26,7 @@ The authors have made their data publicly available, including results from chem
 
 ## Conclusion and Future Directions
 
-The study concludes that while AlphaFold2 represents a significant advancement in protein structure prediction, further improvements in modeling protein-ligand interactions are necessary to fully leverage its capabilities for drug discovery. The authors advocate for continued exploration of machine learning techniques to enhance predictive accuracy in this domain.
+The study concludes that while AlphaFold2 represents a significant advancement in protein structure prediction, further improvements in modeling protein-ligand interactions are necessary to fully leverage its capabilities for drug discovery (Jumper et al., 2021). The authors advocate for continued exploration of machine learning techniques to enhance predictive accuracy in this domain.
 
 In summary, this paper provides a thorough examination of the potential of AlphaFold2 in antibiotic discovery, highlighting both its strengths and areas for improvement. The integration of machine learning with molecular docking represents a promising avenue for future research in drug development.
 
@@ -32,3 +34,5 @@ Additionally, collaboration between computational and experimental scientists wi
 
 ## References
 Wong, F., Krishnan, A., Zheng, E. J., Stärk, H., Manson, A. L., Earl, A. M., ... & Collins, J. J. (2022). Benchmarking AlphaFold‐enabled molecular docking predictions for antibiotic discovery. Molecular systems biology, 18(9), e11081.
+
+Jumper, J., Evans, R., Pritzel, A., Green, T., Figurnov, M., Ronneberger, O., ... & Hassabis, D. (2021). Highly accurate protein structure prediction with AlphaFold. nature, 596(7873), 583-589.
