@@ -101,10 +101,7 @@ Table 1 shows all the models of Brca1 protein obtained from the Swiss model. Out
 For AlphaFold, the confidence score is predicted by per-residue pLDDT (predicted Local Distance Difference Test). Most of the BRCA1 structure predicted by AlphaFold has a pLDDT value higher than 90, indicating a very strong correlation between experimental and predicted structures. The pTM (predicted Template Modeling) has a score of 0.69, which means that the model is 69% confident that the predicted values are highly accurate.
 
 
-
-# 4. Methods and Results
-
-## 4.1 Structural Alignment
+## 3.5 Structural Alignment
 
 Three protein structures were obtained from the Protein Data Bank (PDB):
 
@@ -142,13 +139,6 @@ The alignment process involved multiple cycles of refinement, with outlier atoms
 This chart provides a visual comparison of the RMSD values, highlighting the structural similarities and differences between the aligned models and PDB structures.
 
 
-
-
-**5.0 Future Directions**
-
-1. Perform molecular dynamics simulations to assess the stability of the predicted structure.
-2. Analyze known mutation sites within the context of this structural model.
-3. Use this model for *in silico* drug screening or protein-protein interaction studies.
 
 **References:**
 
