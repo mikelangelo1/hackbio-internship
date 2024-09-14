@@ -76,23 +76,20 @@ We analyzed the experimental structure 1JM7 as a reference for our predicted mod
 ### 3.3 Comparative Analysis of Predicted Models vs. 1JM7
 
 
+### 3.2.1 Predictions Obtained from SWISS-MODEL
 
-<ANTARTIFACTLINK identifier="model-comparison-table" type="text/markdown" title="Comparison of Predicted Models vs. Experimental Structure" isClosed="true" />
+#### Table 1: Brca1 protein models obtained from the Swiss Model with 100% sequence identity
 
-Key observations from the comparative analysis:
+| Models | Sequence Identity | GMQE | QMEANDisCo Global |
+|--------|-------------------|------|-------------------|
+| 1      | 100%              | 0.72 | 0.69 ± 0.06       |
+| 2      | 97.33%            | 0.68 | 0.72 ± 0.06       |
+| 3      | 100%              | 0.55 | 0.70 ± 0.07       |
 
-1. Both SWISS-MODEL and AlphaFold successfully predicted the overall fold of the BRCA1 RING domain.
-2. AlphaFold's model showed slightly better agreement with the experimental structure, particularly in loop regions.
-3. Both models correctly identified the zinc-binding sites, crucial for the domain's structure and function.
-4. The predicted models accurately captured the secondary structure elements present in the 1JM7 crystal structure.
-5. Some differences were observed in the exact positioning of side chains, particularly in solvent-exposed regions.
+Table 1 shows all the models of Brca1 protein obtained from the Swiss model. Out of these three models, the model with the highest GMQE score was selected for further analysis.
 
-### 3.4 Implications for BRCA1 Function
+#### Evaluating SWISS-MODEL and AlphaFold for BRCA1 protein structure prediction:
 
-The high-quality structural predictions provide insights into BRCA1 function:
+1. **Confidence Score:**
 
-1. The accurate representation of the RING domain structure supports its role in protein-protein interactions and E3 ligase activity.
-2. Correct prediction of zinc-binding sites underscores their importance in maintaining BRCA1's structural integrity.
-3. The models provide a foundation for future studies on BRCA1 mutations and their potential impact on protein structure and function.
-
-These results demonstrate the power of combining homology modeling (SWISS-MODEL) with AI-based prediction (AlphaFold) to gain structural insights into important proteins like BRCA1.
+   QMEAN (Qualitative Model Energy Analysis) is a confidence score used to analyze the quality of the predicted protein structure by examining experimentally evaluated structures (Benkert, 2010). A QMEAN score higher than 0 indicates that the protein model is of good quality. The QMEAN score obtained through SWISS-PROT for BRCA1 is 0.31, which means that the predicted model is close to the quality of the experimental model.
