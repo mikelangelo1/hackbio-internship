@@ -138,3 +138,20 @@ The alignment process involved multiple cycles of refinement, with outlier atoms
 <ANTARTIFACTLINK identifier="rmsd-comparison-chart" type="application/vnd.ant.react" title="RMSD Comparison Chart" isClosed="true" />
 
 This chart provides a visual comparison of the RMSD values, highlighting the structural similarities and differences between the aligned models and PDB structures.
+
+
+
+
+**5.0 Future Directions**
+
+1. Perform molecular dynamics simulations to assess the stability of the predicted structure.
+2. Analyze known mutation sites within the context of this structural model.
+3. Use this model for *in silico* drug screening or protein-protein interaction studies.
+
+**References:**
+
+1. Brzovic PS, Rajagopal P, Hoyt DW, King MC, Klevit RE. Structure of a BRCA1-BARD1 heterodimeric RING-RING complex. Nat Struct Biol. 2001 Oct;8(10):833-7. doi: 10.1038/nsb1001-833. PMID: 11573085.
+
+2. Gaiser OJ, Ball LJ, Schmieder P, Leitner D, Strauss H, Wahl M, Kühne R, Oschkinat H, Heinemann U. Solution structure, backbone dynamics, and association behavior of the C-terminal BRCT domain from the breast cancer-associated protein BRCA1. Biochemistry. 2004 Dec 28;43(51):15983-95. doi: 10.1021/bi049550q. PMID: 15609993.
+
+3. White ER, Sun L, Ma Z, Beckta JM, Danzig BA, Hacker DE, Huie M, Williams DC, Edwards RA, Valerie K, Glover JN, Hartman MC. Peptide library approach to uncover phosphomimetic inhibitors of the BRCA1 C-terminal domain. ACS Chem Biol. 2015 May 15;10(5):1198-208. doi: 10.1021/cb500757u. Epub 2015 Feb 5. PMID: 25654734; PMCID: PMC4433557.
