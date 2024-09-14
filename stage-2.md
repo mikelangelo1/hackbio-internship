@@ -5,8 +5,7 @@ Oluwasola Michael, Muhammad Abdur Rehman, Oghenerukevwe Omatie Adiohwo and Bob-M
 
 ## 1. Introduction
 
-The BRCA1 (breast cancer type 1 susceptibility protein) plays a crucial role in DNA repair and tumor suppression. Understanding its protein structure is vital for elucidating its function and potential mutations. This report details the prediction and validation of the BRCA1 protein structure using two state-of-the-art methods: SWISS-MODEL, a widely used homology modeling server, and AlphaFold, an advanced AI-based protein structure prediction tool.
-
+The BRCA1 (breast cancer type 1 susceptibility protein) plays a crucial role in DNA repair and tumor suppression. Understanding its protein structure is vital for elucidating its function and potential mutations. This report details the prediction and validation of the BRCA1 protein structure using two state-of-the-art methods: SWISS-MODEL and Alphafold.
 ## 2. Methodology
 
 ### 2.1 Structure Prediction
