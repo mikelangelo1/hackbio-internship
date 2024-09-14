@@ -26,6 +26,7 @@ Two independent approaches were employed to predict the BRCA1 protein structure:
 - The sequence was converted to FASTA format for input into the prediction servers.
 
 ![Local image](./images/Stage-2/1JM7PDB_PROTEIN%20INT%202.png)
+Figure 1: Structure of BRAC1 (PDB ID: 1JM7)
 
 ### 2.3 Structure Analysis and Validation
 
@@ -40,6 +41,7 @@ This methodology combines homology modeling, AI-based structure prediction, and 
 
 #### 3.1.1 SWISS-MODEL
 ![Local image](./images/Stage-2/swiss-model.jpg)
+Figure 2: Model predicted by SwissModel
 
 SWISS-MODEL generated multiple homology models based on the BRCA1 sequence:
 
@@ -49,6 +51,7 @@ SWISS-MODEL generated multiple homology models based on the BRCA1 sequence:
 
 #### 3.1.2 AlphaFold
 ![Local image](./images/Stage-2/1JM7_Alphafold.png)
+Figure 3: Model predicted by Alphafold
 
 AlphaFold produced a single high-confidence model:
 
