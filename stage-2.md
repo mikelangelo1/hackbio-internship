@@ -138,13 +138,6 @@ This chart provides a visual comparison of the RMSD values, highlighting the str
 
 
 
-
-**5.0 Future Directions**
-
-1. Perform molecular dynamics simulations to assess the stability of the predicted structure.
-2. Analyze known mutation sites within the context of this structural model.
-3. Use this model for *in silico* drug screening or protein-protein interaction studies.
-
 **References:**
 
 1. Brzovic PS, Rajagopal P, Hoyt DW, King MC, Klevit RE. Structure of a BRCA1-BARD1 heterodimeric RING-RING complex. Nat Struct Biol. 2001 Oct;8(10):833-7. doi: 10.1038/nsb1001-833. PMID: 11573085.
