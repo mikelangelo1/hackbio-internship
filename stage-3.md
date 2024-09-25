@@ -183,7 +183,7 @@ The performance of the model was evaluated using several metrics the following m
 
 
 
-### Evaluation of Model
+### 3.1 Evaluation of Model
 
 | Metric                         | Value                                  |
 |---------------------------------|----------------------------------------|
@@ -194,9 +194,10 @@ The performance of the model was evaluated using several metrics the following m
 
 This table presents the evaluation of the model based on MSE and cross-validated MSE scores.
 
-The following table lists the molecular descriptors identified as most influential in predicting pIC50 values, along with their corresponding importance scores:
+### 3.2 Molecular Descriptors
+The following table lists the molecular descriptors identified as most influential in predicting pIC50 values, along with their corresponding importance scores:
 
-
+
 | Descriptor                | Importance Score |
 |----------------------------|------------------|
 | **SMR_VSA3**              | 0.117206         |
@@ -209,19 +210,37 @@ This table presents the evaluation of the model based on MSE and cross-validated
 | **fr_isocyan**            | 0.000000         |
 | **SlogP_VSA9**           | 0.000000         |
 | **fr_nitro_arom_nonortho** | 0.000000         |
-
 
-These descriptors were evaluated for their contribution to the model's predictive performance regarding pIC50 values. Higher importance scores indicate a greater influence on the model's output.
+
+These descriptors were evaluated for their contribution to the model's predictive performance regarding pIC50 values.
+Higher importance scores indicate a greater influence on the model's output.
 
 **Key Descriptors:**
 
-- **SMR_VSA3**: This descriptor, related to the molecule's van der Waals surface area, shows the highest importance score, suggesting a significant impact on pIC50 prediction citeturn0search0.
+- **SMR_VSA3**: This descriptor, related to the molecule's van der Waals surface area, shows the highest importance score, suggesting a significant impact on pIC50 prediction.
 
-- **PEOE_VSA3**: This descriptor pertains to the molecule's electrostatic potential and also plays a crucial role in the model citeturn0search0.
-
-Understanding the influence of these descriptors can guide the optimization of molecular properties to enhance bioactivity.
+- **PEOE_VSA3**: This descriptor pertains to the molecule's electrostatic potential and also plays a crucial role in the model.
 
 ---
+
+## **4.0 Conclusion:**
+
+### Conclusion
+
+The machine learning model developed for predicting the bioactivity (pIC50) of compounds against the Epidermal Growth Factor Receptor (EGFR) demonstrated reasonable predictive performance. The Random Forest Regressor model achieved a Mean Squared Error (MSE) of **0.886** on the test set, with cross-validated MSE scores averaging at **0.781** across five folds, with a standard deviation of **0.061**. These results suggest that the model generalizes well to unseen data with minimal variance in performance across different cross-validation folds.
+
+Several key molecular descriptors, such as **SMR_VSA3**, **PEOE_VSA3**, and **SMR_VSA7**, contributed significantly to the model's predictive power, highlighting the importance of van der Waals surface area and electrostatic properties in determining compound bioactivity.
+
+Further improvements could be made by exploring additional feature engineering techniques, optimizing hyperparameters, or experimenting with other machine learning algorithms. However, the current model provides a solid foundation for screening bioactive compounds and accelerating the drug discovery process targeting EGFR.
+
+---
+
+## **4.0 Appendix:**
+
+The detailed implementation of the machine learning model, including data preprocessing, feature selection, model training, and evaluation, can be found in the accompanying Jupyter Notebook.
+
+[Jupyter Notebook](/Stage-3-Phase-2/model.ipynb)
+
 
 ### **References**
 
