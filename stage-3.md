@@ -235,7 +235,7 @@ Further improvements could be made by exploring additional feature engineering t
 
 ---
 
-## **4.0 Appendix:**
+## **5.0 Appendix:**
 
 The detailed implementation of the machine learning model, including data preprocessing, feature selection, model training, and evaluation, can be found in the accompanying Jupyter Notebook.
 
