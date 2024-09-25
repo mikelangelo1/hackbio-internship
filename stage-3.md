@@ -195,7 +195,7 @@ The performance of the model was evaluated using several metrics the following m
 This table presents the evaluation of the model based on MSE and cross-validated MSE scores.
 
 ### 3.2 Molecular Descriptors
-The following table lists the molecular descriptors identified as most influential in predicting pIC50 values, along with their corresponding importance scores:
+The following table lists the molecular descriptors identified as most influential in predicting pIC50 values, along with their corresponding importance scores:
 
 
 | Descriptor                | Importance Score |
@@ -244,10 +244,9 @@ The detailed implementation of the machine learning model, including data prepro
 
 ### **References**
 
-1. [http://inconnate.com/Download/Fenugreek/document3.pdf](http://inconnate.com/Download/Fenugreek/document3.pdf)
-2. [https://www.sciencedirect.com/science/article/pii/S1658077X15301065](https://www.sciencedirect.com/science/article/pii/S1658077X15301065)
-3. [https://www.rcsb.org/structure/5EDP](https://www.rcsb.org/structure/5EDP)
-4. [http://sts.bioe.uic.edu/castp/index.html?5edp](http://sts.bioe.uic.edu/castp/index.html?5edp)
+1. Smith, M. (2003). Therapeutic applications of fenugreek. Alternative Medicine Review, 8(1), 20-27.
+2. Wani, S. A., & Kumar, P. (2018). Fenugreek: A review on its nutraceutical properties and utilization in various food products. Journal of the Saudi Society of Agricultural Sciences, 17(2), 97-106.
+4. Tian, W., Chen, C., Lei, X., Zhao, J., & Liang, J. (2018). CASTp 3.0: computed atlas of surface topography of proteins. Nucleic acids research, 46(W1), W363-W367.
 5. Hanan EJ, Baumgardner M, Bryan MC, et al. 4-Aminoindazolyl-dihydrofuro[3,4-d]pyrimidines as non-covalent inhibitors of mutant epidermal growth factor receptor tyrosine kinase. *Bioorg Med Chem Lett.* 2016 Jan 15;26(2):534-539. doi: 10.1016/j.bmcl.2015.11.078.
 6. Hsu, W., Yang, J., Mok, T., & Loong, H. (2017). Overview of current systemic management of EGFR-mutant NSCLC. *Annals of Oncology*, 29, i3-i9. [https://doi.org/10.1093/annonc/mdx702](https://doi.org/10.1093/annonc/mdx702)
 7. [https://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=1956](https://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=1956)
