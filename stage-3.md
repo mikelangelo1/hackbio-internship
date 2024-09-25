@@ -88,6 +88,13 @@ This table presents the binding affinity and RMSD values for the top poses of 50
 | 5edp_135398658_uff_E=289.04| -7.7         | 0       | 0       |
 
 
+### 2.2 Visualization of Active site of EFGR
+
+- This figure shows the active site of EFGR
+
+
+![Structure of EFGR and active site (PDB ID: 5EDP)](./images/Stage-3/5EDP-ACTIVE%20SITE%20.png)
+
 ## **Phase 2: Machine learning model for predicting therapeutic target inhibitors against Epidermal Growth Factor Receptor (EGFR)**
 
 ## **Introduction**
