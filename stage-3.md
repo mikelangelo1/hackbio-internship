@@ -3,34 +3,34 @@
 ## Authors: Oluwasola Michael, Muhammad Abdur Rehman, Oghenerukevwe Omatie Adiohwo and Bob-Manuel Osuji
 
 
-### **Introduction**
+### **1.0 Introduction**
 
 The *EGFR* gene encodes a transmembrane glycoprotein that is part of the protein kinase superfamily. This protein acts as a receptor for the epidermal growth factor family. Upon binding to epidermal growth factor, EGFR induces receptor dimerization and tyrosine autophosphorylation, which leads to cell proliferation. Mutations in the *EGFR* gene are known to be associated with lung cancer [1]. EGFR exhibits membranous and cytoplasmic expression in varying fractions of tumor cells across several cancer types at the protein level. It is also expressed in several cancers at the mRNA level. High expression of this gene is linked to an unfavorable prognosis in urothelial cancer [2].
 
 ---
 
-### **Methodology**
+### ** 2.0 Methodology**
 
-### **Phytochemical Library**
+### **2.1 Phytochemical Library**
 
 Fenugreek (*Trigonella foenum-graecum*), belonging to the Leguminosae family, is an annual plant widely recognized as an Indian medicinal herb. It is rich in bioactive compounds, including steroidal saponins, diosgenin, and furastanol glycosides. Fenugreek, which grows natively in India and Northern Africa, is used to prepare medicinal extracts from its leaves and seeds. To support our study, we have retrieved the phytochemicals present in Fenugreek and constructed a phytochemical library for molecular docking against *EGFR* [1][2].
 
 
-### **Protein Structure**
+### **2.2 Protein Structure**
 
 The protein sequence of *EGFR* was obtained from the Protein Data Bank (PDB) with ID 5EDP. This structure represents the EGFR kinase with mutations (T790M/L858R) in its apo form and is classified as a transferase/transferase inhibitor. The protein comprises a single chain (A) with a sequence length of 331. Gene names associated with EGFR include *EGFR*, *ERBB*, *ERBB1*, and *HER1* [3].
 
 The active site of the PDB structure was predicted using CASTp, located at position 837 [4].
 
 
-### **Molecular Docking**
+### **2.3 Molecular Docking**
 
 Molecular docking was performed between the EGFR protein and a library of 50 compounds, including the reference compound Gefitinib (PubChem ID: 123631) [5]. Docking was conducted using PyRx, with each ligand undergoing 9 iterations, yielding a total of 459 docking results. The ligand with the most negative binding affinity was selected for further analysis. Results are summarized in the table below.
 
 
 ---
 
-### **Result**
+### **3.0 Result**
 This table presents the binding affinity and RMSD values for the top poses of 50 phytochemicals when docked against our target protein.
 
 | Ligand                 | Binding Affinity | RMSD_UB | RMSD_LB |
@@ -95,21 +95,37 @@ This table presents the binding affinity and RMSD values for the top poses of 50
 
 ![Structure of EFGR and active site (PDB ID: 5EDP)](./images/Stage-3/5EDP-ACTIVE%20SITE%20.png)
 
+---
+
+### **4.0 Conclusion**
+### Conclusion
+
+The docking results indicate a wide range of binding affinities among the 50 phytochemicals when interacting with the target protein, EGFR (PDB ID: 5EDP). The best-performing compounds exhibited strong binding affinities, with several compounds showing values as low as -9.3 kcal/mol. These low binding affinities suggest a higher likelihood of interaction between these ligands and the target protein, indicating their potential as inhibitors of EGFR.
+
+Visualization of the active site using CASTp revealed that the key binding region was located at position 837 of the protein structure. The successful docking of multiple phytochemicals within this active site suggests that these compounds may effectively inhibit EGFR activity, which could be useful in cancer treatment.
+
+Further experimental validation and molecular dynamics simulations will be necessary to confirm the stability and efficacy of these phytochemicals as potential therapeutic agents.
+
+
+-----
+
 ## **Phase 2: Machine learning model for predicting therapeutic target inhibitors against Epidermal Growth Factor Receptor (EGFR)**
 
-## **Introduction**
+## **1.0 Introduction**
 In this Phase 2 drug discovery project, our team developed a machine learning model to predict bioactive compounds against *Epidermal Growth Factor Receptor erbB1* (CHEMBL203). Utilizing the ChEMBL database, we aimed to create a robust predictive model for pIC50 values, potentially accelerating the drug discovery process for related diseases such as cancer.
 
-## **Methods:**
+---
 
-### **Data Collection**
+## **2.0 Methods:**
+
+### **2.1 Data Collection**
 We retrieve bioactivity data specifically for the *Epidermal Growth Factor Receptor erbB1* (CHEMBL203). Here, we retrieved pChEMBL values, which provide a standardized measure of bioactivity for the target.
 
-### **Data Pre-processing of Bioactivity Data**
+### **2.2 Data Pre-processing of Bioactivity Data**
 
 Compounds that have missing values in the `standard_value` or `canonical_smiles` columns was removed from the dataset. This ensures that the analysis is based on complete, valid data. We then create a new dataset that combines the `molecule_chembl_id`, `canonical_smiles`, and `standard_value`, along with the bioactivity class for further analysis.
 
-### ** Classification of Compound based on their bioactivity**
+### **2.3 Classification of Compound based on their bioactivity**
 The bioactivity data uses IC50 values to classify compounds:
 - **Active** (IC50 < 1000 nM),
 - **Inactive** (IC50 > 10,000 nM), or 
@@ -118,30 +134,20 @@ The bioactivity data uses IC50 values to classify compounds:
 
 This classification allows for a clearer understanding of the bioactivity spectrum.
 
-### **Calculating Lipinski Descriptors**
+### **2.4 Calculating Lipinski Descriptors**
 Lipinski's Rule of Five was used to evaluate the drug-likeness of a compound based on its absorption, distribution, metabolism, and excretion (ADME) properties:
 - **Molecular weight** less than 500 Da.
 - **LogP** (octanol-water partition coefficient) less than 5.
 - **Hydrogen bond donors** fewer than 5.
 - **Hydrogen bond acceptors** fewer than 10.
 
-### **Converting IC50 to pIC50**
-To achieve a more uniform distribution of IC50 values, we converted the values to the negative logarithmic scale:
+To achieve a more uniform distribution of IC50 values, we converted the values to the negative logarithmic scale. This transformation normalizes the data and prepares it for subsequent analysis.
 
-\[
-\text{pIC50} = -\log_{10}(\text{IC50 in M})
-\]
-
-This transformation normalizes the data and prepares it for subsequent analysis.
-
-### **Exploratory Data Analysis (Chemical Space Analysis)**
+### **2.5 Exploratory Data Analysis (Chemical Space Analysis)**
 #### **Scatter Plot of Molecular Weight vs. LogP**
-By plotting the molecular weight (MW) against the LogP, we can visualize how bioactivity classes span chemical spaces. This offers insights into how the bioactivity of compounds correlates with their molecular properties.
+By plotting the molecular weight (MW) against the LogP, we can visualize how bioactivity classes span chemical spaces. This offers insights into how the bioactivity of compounds correlates with their molecular properties. RDKit was used to calculate over 200 molecular descriptors for each compound. These descriptors capture various properties such as size, shape, and electronegativity, which influence bioactivity.
 
-### **Molecular Descriptors Calculation Using RDKit**
-RDKit will be used to calculate over 200 molecular descriptors for each compound. These descriptors capture various properties such as size, shape, and electronegativity, which influence bioactivity.
-
-### **Training a Random Forest Regressor Model**
+### ** 2.6 Training a Random Forest Regressor Model**
 1. **Data Splitting:** The dataset is divided into training (80%) and testing (20%) sets.
 2. **Feature Scaling:** Standard scaling is applied to the features to normalize the descriptor values.
 3. **Model Training:** A Random Forest Regressor is trained on the scaled training data.
@@ -149,29 +155,71 @@ RDKit will be used to calculate over 200 molecular descriptors for each compound
 5. **Feature Importance:** The most important molecular descriptors contributing to the prediction of pIC50 values are identified.
 
 
-### **Model Selection and Training:**
+### **2.7 Model Selection and Training:**
 We selected a Random Forest Regressor for this project due to its ability to handle non-linear relationships and its capability to provide feature importance for further interpretability. The data was split into training (80%) and testing (20%) sets, and features were scaled using `StandardScaler` to standardize the range of the descriptor values. 
 
-### **Model Evaluation:**
+### **2.8 Model Evaluation:**
 The performance of the model was evaluated using several metrics the following metrices Mean Squared Error (MSE), R² Score and 5-Fold Cross-Validation.
 
 
+---
 
-## **Results:**
-
-
-
-### **Cross-validation of the Model**
-Using 5-fold cross-validation, we will calculate the cross-validated MSE to assess the robustness of the model across different subsets of the data. This ensures that the model generalizes well to unseen data.
-
-### **Plotting Results**
-1. **Scatter Plot of Actual vs. Predicted pIC50 Values:** This plot visualizes the correlation between true and predicted pIC50 values.
-2. **Feature Importance Plot:** A bar plot will display the importance of each molecular descriptor, helping to identify which features contribute most to bioactivity predictions.
-
-By following this process, we gain a comprehensive understanding of the bioactivity data, identify key molecular features, and develop a predictive model for pIC50 values, providing valuable insights for drug discovery.
+## **3.0 Results:**
+- This figure shows the result of the classified bioactivity data based on IC50 values.
 
 
+![Classification of bioactivity](./images/Stage-3/output.png)
 
+- This figure shows how bioactivity classes span chemical spaces.
+
+
+![Bioactivity](./images/Stage-3/output-2.png)
+
+
+- This figure shows the result of the trained model
+
+
+![Model training](./images/Stage-3/model_result.png)
+
+
+
+### Evaluation of Model
+
+| Metric                         | Value                                  |
+|---------------------------------|----------------------------------------|
+| Mean Squared Error (MSE)        | 0.8865                                 |
+| Cross-Validated MSE Scores      | [0.8901, 0.7435, 0.7128, 0.7656, 0.7943] |
+| Mean MSE                        | 0.7813                                 |
+| Standard Deviation of MSE       | 0.0606                                 |
+
+This table presents the evaluation of the model based on MSE and cross-validated MSE scores.
+
+The following table lists the molecular descriptors identified as most influential in predicting pIC50 values, along with their corresponding importance scores:
+
+
+| Descriptor                | Importance Score |
+|----------------------------|------------------|
+| **SMR_VSA3**              | 0.117206         |
+| **PEOE_VSA3**             | 0.040758         |
+| **SMR_VSA7**              | 0.032501         |
+| **PEOE_VSA10**            | 0.027051         |
+| **SlogP_VSA10**           | 0.021219         |
+| **SMR_VSA8**              | 0.000000         |
+| **fr_lactam**             | 0.000000         |
+| **fr_isocyan**            | 0.000000         |
+| **SlogP_VSA9**           | 0.000000         |
+| **fr_nitro_arom_nonortho** | 0.000000         |
+
+
+These descriptors were evaluated for their contribution to the model's predictive performance regarding pIC50 values. Higher importance scores indicate a greater influence on the model's output.
+
+**Key Descriptors:**
+
+- **SMR_VSA3**: This descriptor, related to the molecule's van der Waals surface area, shows the highest importance score, suggesting a significant impact on pIC50 prediction citeturn0search0.
+
+- **PEOE_VSA3**: This descriptor pertains to the molecule's electrostatic potential and also plays a crucial role in the model citeturn0search0.
+
+Understanding the influence of these descriptors can guide the optimization of molecular properties to enhance bioactivity.
 
 ---
 
