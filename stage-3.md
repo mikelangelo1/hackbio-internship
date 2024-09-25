@@ -1,9 +1,7 @@
 ## **Phase 1: Virtual Screening and Molecular Docking of inhibitors against Epidermal Growth Factor Receptor (EGFR)**
 
-## Authors
-Oluwasola Michael, Muhammad Abdur Rehman, Oghenerukevwe Omatie Adiohwo and Bob-Manuel Osuji
+## Authors: Oluwasola Michael, Muhammad Abdur Rehman, Oghenerukevwe Omatie Adiohwo and Bob-Manuel Osuji
 
----
 
 ### **Introduction**
 
@@ -17,7 +15,6 @@ The *EGFR* gene encodes a transmembrane glycoprotein that is part of the protein
 
 Fenugreek (*Trigonella foenum-graecum*), belonging to the Leguminosae family, is an annual plant widely recognized as an Indian medicinal herb. It is rich in bioactive compounds, including steroidal saponins, diosgenin, and furastanol glycosides. Fenugreek, which grows natively in India and Northern Africa, is used to prepare medicinal extracts from its leaves and seeds. To support our study, we have retrieved the phytochemicals present in Fenugreek and constructed a phytochemical library for molecular docking against *EGFR* [1][2].
 
----
 
 ### **Protein Structure**
 
@@ -25,7 +22,6 @@ The protein sequence of *EGFR* was obtained from the Protein Data Bank (PDB) wit
 
 The active site of the PDB structure was predicted using CASTp, located at position 837 [4].
 
----
 
 ### **Molecular Docking**
 
