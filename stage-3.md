@@ -1,13 +1,17 @@
-## **Stage 3 Task: Phase 1**
+## **Phase 1: Virtual Screening and Molecular Docking of inhibitors against Epidermal Growth Factor Receptor (EGFR)**
 
-### **Epidermal Growth Factor Receptor (EGFR)**
-
-The *EGFR* gene encodes a transmembrane glycoprotein that is part of the protein kinase superfamily. This protein acts as a receptor for the epidermal growth factor family. Upon binding to epidermal growth factor, EGFR induces receptor dimerization and tyrosine autophosphorylation, which leads to cell proliferation. Mutations in the *EGFR* gene are known to be associated with lung cancer [1].
-
-### **Human Proteome Atlas**
-EGFR exhibits membranous and cytoplasmic expression in varying fractions of tumor cells across several cancer types at the protein level. It is also expressed in several cancers at the mRNA level. High expression of this gene is linked to an unfavorable prognosis in urothelial cancer [2].
+## Authors
+Oluwasola Michael, Muhammad Abdur Rehman, Oghenerukevwe Omatie Adiohwo and Bob-Manuel Osuji
 
 ---
+
+### **Introduction**
+
+The *EGFR* gene encodes a transmembrane glycoprotein that is part of the protein kinase superfamily. This protein acts as a receptor for the epidermal growth factor family. Upon binding to epidermal growth factor, EGFR induces receptor dimerization and tyrosine autophosphorylation, which leads to cell proliferation. Mutations in the *EGFR* gene are known to be associated with lung cancer [1]. EGFR exhibits membranous and cytoplasmic expression in varying fractions of tumor cells across several cancer types at the protein level. It is also expressed in several cancers at the mRNA level. High expression of this gene is linked to an unfavorable prognosis in urothelial cancer [2].
+
+---
+
+### **Methodology**
 
 ### **Phytochemical Library**
 
@@ -27,20 +31,10 @@ The active site of the PDB structure was predicted using CASTp, located at posit
 
 Molecular docking was performed between the EGFR protein and a library of 50 compounds, including the reference compound Gefitinib (PubChem ID: 123631) [5]. Docking was conducted using PyRx, with each ligand undergoing 9 iterations, yielding a total of 459 docking results. The ligand with the most negative binding affinity was selected for further analysis. Results are summarized in the table below.
 
+
 ---
 
-### **References**
-
-1. [http://inconnate.com/Download/Fenugreek/document3.pdf](http://inconnate.com/Download/Fenugreek/document3.pdf)
-2. [https://www.sciencedirect.com/science/article/pii/S1658077X15301065](https://www.sciencedirect.com/science/article/pii/S1658077X15301065)
-3. [https://www.rcsb.org/structure/5EDP](https://www.rcsb.org/structure/5EDP)
-4. [http://sts.bioe.uic.edu/castp/index.html?5edp](http://sts.bioe.uic.edu/castp/index.html?5edp)
-5. Hanan EJ, Baumgardner M, Bryan MC, et al. 4-Aminoindazolyl-dihydrofuro[3,4-d]pyrimidines as non-covalent inhibitors of mutant epidermal growth factor receptor tyrosine kinase. *Bioorg Med Chem Lett.* 2016 Jan 15;26(2):534-539. doi: 10.1016/j.bmcl.2015.11.078.
-6. Hsu, W., Yang, J., Mok, T., & Loong, H. (2017). Overview of current systemic management of EGFR-mutant NSCLC. *Annals of Oncology*, 29, i3-i9. [https://doi.org/10.1093/annonc/mdx702](https://doi.org/10.1093/annonc/mdx702)
-7. [https://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=1956](https://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=1956)
-8. [https://www.proteinatlas.org/ENSG00000146648-EGFR](https://www.proteinatlas.org/ENSG00000146648-EGFR)
-
-
+## **Phase 2: Machine learning model for predicting therapeutic target inhibitors against Epidermal Growth Factor Receptor (EGFR)**
 
 ## **Introduction**
 In this Phase 2 drug discovery project, our team developed a machine learning model to predict bioactive compounds against *Epidermal Growth Factor Receptor erbB1* (CHEMBL203). Utilizing the ChEMBL database, we aimed to create a robust predictive model for pIC50 values, potentially accelerating the drug discovery process for related diseases such as cancer.
@@ -114,3 +108,19 @@ Using 5-fold cross-validation, we will calculate the cross-validated MSE to asse
 2. **Feature Importance Plot:** A bar plot will display the importance of each molecular descriptor, helping to identify which features contribute most to bioactivity predictions.
 
 By following this process, we gain a comprehensive understanding of the bioactivity data, identify key molecular features, and develop a predictive model for pIC50 values, providing valuable insights for drug discovery.
+
+
+
+
+---
+
+### **References**
+
+1. [http://inconnate.com/Download/Fenugreek/document3.pdf](http://inconnate.com/Download/Fenugreek/document3.pdf)
+2. [https://www.sciencedirect.com/science/article/pii/S1658077X15301065](https://www.sciencedirect.com/science/article/pii/S1658077X15301065)
+3. [https://www.rcsb.org/structure/5EDP](https://www.rcsb.org/structure/5EDP)
+4. [http://sts.bioe.uic.edu/castp/index.html?5edp](http://sts.bioe.uic.edu/castp/index.html?5edp)
+5. Hanan EJ, Baumgardner M, Bryan MC, et al. 4-Aminoindazolyl-dihydrofuro[3,4-d]pyrimidines as non-covalent inhibitors of mutant epidermal growth factor receptor tyrosine kinase. *Bioorg Med Chem Lett.* 2016 Jan 15;26(2):534-539. doi: 10.1016/j.bmcl.2015.11.078.
+6. Hsu, W., Yang, J., Mok, T., & Loong, H. (2017). Overview of current systemic management of EGFR-mutant NSCLC. *Annals of Oncology*, 29, i3-i9. [https://doi.org/10.1093/annonc/mdx702](https://doi.org/10.1093/annonc/mdx702)
+7. [https://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=1956](https://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=1956)
+8. [https://www.proteinatlas.org/ENSG00000146648-EGFR](https://www.proteinatlas.org/ENSG00000146648-EGFR)
