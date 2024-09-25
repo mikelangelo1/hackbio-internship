@@ -1,3 +1,47 @@
+## **Stage 3 Task: Phase 1**
+
+### **Epidermal Growth Factor Receptor (EGFR)**
+
+The *EGFR* gene encodes a transmembrane glycoprotein that is part of the protein kinase superfamily. This protein acts as a receptor for the epidermal growth factor family. Upon binding to epidermal growth factor, EGFR induces receptor dimerization and tyrosine autophosphorylation, which leads to cell proliferation. Mutations in the *EGFR* gene are known to be associated with lung cancer [1].
+
+### **Human Proteome Atlas**
+EGFR exhibits membranous and cytoplasmic expression in varying fractions of tumor cells across several cancer types at the protein level. It is also expressed in several cancers at the mRNA level. High expression of this gene is linked to an unfavorable prognosis in urothelial cancer [2].
+
+---
+
+### **Phytochemical Library**
+
+Fenugreek (*Trigonella foenum-graecum*), belonging to the Leguminosae family, is an annual plant widely recognized as an Indian medicinal herb. It is rich in bioactive compounds, including steroidal saponins, diosgenin, and furastanol glycosides. Fenugreek, which grows natively in India and Northern Africa, is used to prepare medicinal extracts from its leaves and seeds. To support our study, we have retrieved the phytochemicals present in Fenugreek and constructed a phytochemical library for molecular docking against *EGFR* [1][2].
+
+---
+
+### **Protein Structure**
+
+The protein sequence of *EGFR* was obtained from the Protein Data Bank (PDB) with ID 5EDP. This structure represents the EGFR kinase with mutations (T790M/L858R) in its apo form and is classified as a transferase/transferase inhibitor. The protein comprises a single chain (A) with a sequence length of 331. Gene names associated with EGFR include *EGFR*, *ERBB*, *ERBB1*, and *HER1* [3].
+
+The active site of the PDB structure was predicted using CASTp, located at position 837 [4].
+
+---
+
+### **Molecular Docking**
+
+Molecular docking was performed between the EGFR protein and a library of 50 compounds, including the reference compound Gefitinib (PubChem ID: 123631) [5]. Docking was conducted using PyRx, with each ligand undergoing 9 iterations, yielding a total of 459 docking results. The ligand with the most negative binding affinity was selected for further analysis. Results are summarized in the table below.
+
+---
+
+### **References**
+
+1. [http://inconnate.com/Download/Fenugreek/document3.pdf](http://inconnate.com/Download/Fenugreek/document3.pdf)
+2. [https://www.sciencedirect.com/science/article/pii/S1658077X15301065](https://www.sciencedirect.com/science/article/pii/S1658077X15301065)
+3. [https://www.rcsb.org/structure/5EDP](https://www.rcsb.org/structure/5EDP)
+4. [http://sts.bioe.uic.edu/castp/index.html?5edp](http://sts.bioe.uic.edu/castp/index.html?5edp)
+5. Hanan EJ, Baumgardner M, Bryan MC, et al. 4-Aminoindazolyl-dihydrofuro[3,4-d]pyrimidines as non-covalent inhibitors of mutant epidermal growth factor receptor tyrosine kinase. *Bioorg Med Chem Lett.* 2016 Jan 15;26(2):534-539. doi: 10.1016/j.bmcl.2015.11.078.
+6. Hsu, W., Yang, J., Mok, T., & Loong, H. (2017). Overview of current systemic management of EGFR-mutant NSCLC. *Annals of Oncology*, 29, i3-i9. [https://doi.org/10.1093/annonc/mdx702](https://doi.org/10.1093/annonc/mdx702)
+7. [https://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=1956](https://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=1956)
+8. [https://www.proteinatlas.org/ENSG00000146648-EGFR](https://www.proteinatlas.org/ENSG00000146648-EGFR)
+
+
+
 ## **Introduction**
 In this Phase 2 drug discovery project, our team developed a machine learning model to predict bioactive compounds against *Epidermal Growth Factor Receptor erbB1* (CHEMBL203). Utilizing the ChEMBL database, we aimed to create a robust predictive model for pIC50 values, potentially accelerating the drug discovery process for related diseases such as cancer.
 
