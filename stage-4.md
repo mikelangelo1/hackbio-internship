@@ -4,7 +4,7 @@
 
 ## Authors: Muhammad Abdur Rehman, Oghenerukevwe Omatie Adiohwo and Oluwasola Michael
 
-## Background
+## Introduction
 
 Machine learning (ML) has emerged as a powerful tool in cancer drug discovery, offering the potential to accelerate the identification of effective treatments. By leveraging large datasets of genomic and chemical properties, ML models can predict drug sensitivity across diverse cancer cell lines. This approach enables researchers to prioritize promising drug candidates for further investigation, potentially reducing the time and cost associated with traditional drug discovery methods. The integration of ML in this field represents a significant step towards personalized cancer therapies, as it allows for the consideration of individual genetic profiles in treatment selection.
 
@@ -30,21 +30,25 @@ The optimized model was evaluated using three metrics: Mean Squared Error (MSE),
 
 The optimized model was used to predict IC50 values for the entire dataset, after which a scatter plot was created to visualize the relationship between actual and predicted IC50 values, and the correlation coefficient between these values was calculated.
 
-## Results and Interpretation
+## Results and Discusion
 
-The optimized Orthogonal Matching Pursuit model showed the following performance metrics on the test set:
+# Performance Evaluation of the Optimized Orthogonal Matching Pursuit Model
 
-- Mean Squared Error: 1.2943
-- R-squared: 0.4545
-- Mean Absolute Error: 0.8845
+The optimized Orthogonal Matching Pursuit (OMP) model was assessed on the test set, and the following performance metrics were obtained:
 
-The R-squared value of 0.4545 indicates that our model explains about 45.45% of the variance in the IC50 values. While this shows some predictive power, there's still a significant portion of variability unaccounted for.
+- **Mean Squared Error (MSE):** 1.2943
+- **R-squared (R²):** 0.4545
+- **Mean Absolute Error (MAE):** 0.8845
 
-The scatter plot of actual vs. predicted IC50 values revealed a positive correlation, with a correlation coefficient of 0.6870. This moderate positive correlation suggests that our model's predictions generally align with the actual values, but there's room for improvement.
+The R² value of 0.4545 indicates that our model explains approximately 45.45% of the variance in the IC50 values. While this demonstrates some predictive power, a significant portion of the variability in the data remains unaccounted for, indicating potential areas for improvement.
+
+### Scatter Plot Analysis
+![Scatter plot of actual vs predicted IC50](./stage-4/images/ML_predicted_result.png)
+A scatter plot of actual vs. predicted IC50 values revealed a positive correlation, with a correlation coefficient of **0.6870**. This moderate positive correlation suggests that while the model’s predictions generally align with the actual values, there is still room for improvement in predictive accuracy.
 
 ## Comparison with Target Paper
 
-The original paper reported R² values ranging from 0.57 to 0.72 for different feature sets and algorithms. Our model's R² of 0.4545 falls slightly below this range, suggesting that our reproduction didn't fully capture the performance reported in the original study. This discrepancy could be due to differences in feature selection, the specific subset of data used, or the choice of algorithm.
+In the original study, R² values ranged from 0.57 to 0.72 across different feature sets and algorithms. Our model’s R² of 0.4545 falls below this range, suggesting that our reproduction did not fully capture the performance reported in the target paper. This discrepancy could stem from differences in feature selection, variations in the dataset, or the choice of algorithm used in our analysis. Further investigation is required to pinpoint the causes and bridge this performance gap.
 
 ## Conclusion and Insights
 
