@@ -32,7 +32,7 @@ The optimized model was used to predict IC50 values for the entire dataset, afte
 
 ## Results and Discusion
 
-# Performance Evaluation of the Optimized Orthogonal Matching Pursuit Model
+### Performance Evaluation of the Optimized Orthogonal Matching Pursuit Model
 
 The optimized Orthogonal Matching Pursuit (OMP) model was assessed on the test set, and the following performance metrics were obtained:
 
