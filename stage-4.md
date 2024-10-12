@@ -87,9 +87,19 @@ A diverse library of 61 compounds was curated, comprising validated inhibitors f
 
 Molecular docking was performed using AutoDock Vina. The docking grid was centered on the active site of each HDAC subtype, with dimensions sufficient to encompass the binding pocket. Each ligand-protein pair was subjected to triplicate docking runs to ensure reproducibility. Docking parameters were optimized based on known inhibitor-HDAC complexes to validate the docking protocol.
 
+### Docking---placeholder
+
+| ![Docking](./stage-4/images/2vqj_135398658docked-1.png) | ![Swiss-Model vs 1JM7](./stage-4/images/3c5k_441900docked-1.png) |
+| Figure 4: 3D AlphaFold structure aligned with Crystal structure of 1JM7 from PDB | Figure 5: 3D Swiss-Model structure aligned with Crystal structure of 1JM7 from PDB |
+
+
+| ![Docking](./stage-4/images/4bkx_441900docked-1.png) | ![Swiss-Model vs 1OQA](./stage-4/images/8q9r_5352062docked-1.png) |
+| Figure 6: 3D AlphaFold structure aligned with Crystal structure of 1OQA from PDB | Figure 7: 3D Swiss-Model structure aligned with Crystal structure of 1OQA from PDB |
+
+
 ### 2.4 Data Analysis
 
-Docking scores from triplicate runs were averaged, and standard deviations were calculated. A heatmap was generated using the mean docking scores to visualize binding affinities across all ligand-protein pairs. The best-scoring poses were analyzed for key interactions using PyMOL and LigPlot+.
+Docking scores from triplicate runs were averaged, and standard deviations were calculated. A heatmap was generated using the mean docking scores to visualize binding affinities across all ligand-protein pairs. The best-scoring poses were analyzed for key interactions using PyMOL.
 
 ## 3. Results and Discussion
 
