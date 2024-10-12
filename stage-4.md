@@ -36,19 +36,19 @@ The optimized model was used to predict IC50 values for the entire dataset, afte
 
 The optimized Orthogonal Matching Pursuit (OMP) model was assessed on the test set, and the following performance metrics were obtained:
 
-- **Mean Squared Error (MSE):** 1.2943
-- **R-squared (R²):** 0.4545
-- **Mean Absolute Error (MAE):** 0.8845
+- **Mean Squared Error (MSE):** 6.962
+- **R-squared (R²):** 0.069
+- **Mean Absolute Error (MAE):** 2.090
 
-The R² value of 0.4545 indicates that our model explains approximately 45.45% of the variance in the IC50 values. While this demonstrates some predictive power, a significant portion of the variability in the data remains unaccounted for, indicating potential areas for improvement.
+The R² value of 0.069 indicates that our model explains approximately 6.9% of the variance in the IC50 values. While this demonstrates some predictive power, a significant portion of the variability in the data remains unaccounted for, indicating potential areas for improvement.
 
 ### Scatter Plot Analysis
 ![Scatter plot of actual vs predicted IC50](./stage-4/images/ML_predicted_result.png)
-A scatter plot of actual vs. predicted IC50 values revealed a positive correlation, with a correlation coefficient of **0.6870**. This moderate positive correlation suggests that while the model’s predictions generally align with the actual values, there is still room for improvement in predictive accuracy.
+A scatter plot of actual vs. predicted IC50 values revealed a positive correlation, with a correlation coefficient of **0.069**. This moderate positive correlation suggests that while the model’s predictions generally align with the actual values, there is still room for improvement in predictive accuracy.
 
 ## Comparison with Target Paper
 
-In the original study, R² values ranged from 0.57 to 0.72 across different feature sets and algorithms. Our model’s R² of 0.4545 falls below this range, suggesting that our reproduction did not fully capture the performance reported in the target paper. This discrepancy could stem from differences in feature selection, variations in the dataset, or the choice of algorithm used in our analysis. Further investigation is required to pinpoint the causes and bridge this performance gap.
+In the original study, an R² value of 0.68 was reported. Our model’s R² of 0.069 falls significantly below this, indicating that our reproduction did not achieve the performance reported in the target paper. This difference could be attributed to variations in feature selection, differences in the dataset, or the choice of algorithm in our analysis. Further investigation is needed to identify the causes of this discrepancy and improve the model's performance.
 
 ## Conclusion and Insights
 
@@ -58,8 +58,6 @@ Key insights:
 1. The importance of comprehensive feature selection: Our use of Lipinski descriptors alone may not capture all relevant molecular properties influencing drug sensitivity.
 2. The challenge of data quality and completeness: Removing rows with missing SMILES data potentially reduced our dataset's size and diversity.
 3. The potential of ensemble or more advanced models: Given the complexity of drug-cell line interactions, more sophisticated models might yield better results.
-
-Future work could focus on expanding the feature set, exploring more advanced ML techniques, and incorporating additional biological information to improve predictive performance.
 
 
 
