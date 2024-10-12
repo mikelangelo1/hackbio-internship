@@ -1,9 +1,5 @@
 # Reproducing Cancer Drug Sensitivity Prediction using Machine Learning
 
-## Overview
-
-This report presents our team's efforts to reproduce the results of the paper "Machine Learning Prediction of Cancer Cell Sensitivity to Drugs Based on Genomic and Chemical Properties" using a machine learning pipeline. We focused on predicting cancer cell line sensitivity to drugs using molecular descriptors and drug response data.
-
 ## Background
 
 Machine learning (ML) has emerged as a powerful tool in cancer drug discovery, offering the potential to accelerate the identification of effective treatments. By leveraging large datasets of genomic and chemical properties, ML models can predict drug sensitivity across diverse cancer cell lines. This approach enables researchers to prioritize promising drug candidates for further investigation, potentially reducing the time and cost associated with traditional drug discovery methods. The integration of ML in this field represents a significant step towards personalized cancer therapies, as it allows for the consideration of individual genetic profiles in treatment selection.
@@ -12,39 +8,23 @@ Machine learning (ML) has emerged as a powerful tool in cancer drug discovery, o
 
 ### Dataset Preparation
 
-1. We loaded the dataset from an Excel file containing information on cell lines, drugs, and their efficacy.
-2. We filtered the dataset to include only cell lines that appeared more than 400 times, as no cell line appeared more than 500 times as initially specified.
-3. We selected relevant columns: CELL_LINE_NAME, TCGA_DESC, DRUG_NAME, and LN_IC50.
-4. Using the PubChemPy library, we generated SMILES (Simplified Molecular Input Line Entry System) representations for each drug based on its name.
-5. Rows with missing SMILES data were removed to ensure data quality.
+The dataset, containing information on cell lines, drugs, and their efficacy, was loaded from an Excel file and filtered to include only cell lines appearing more than 400 times; relevant columns (CELL_LINE_NAME, TCGA_DESC, DRUG_NAME, and LN_IC50) were selected, after which SMILES representations for each drug were generated using the PubChemPy library based on drug names, and rows with missing SMILES data were subsequently removed to ensure data quality.
 
 ### Molecular Descriptor Generation
 
-We used RDKit to calculate Lipinski descriptors for each drug based on its SMILES representation. The descriptors included:
-- Molecular Weight (MW)
-- LogP
-- Number of Hydrogen Bond Donors
-- Number of Hydrogen Bond Acceptors
+Using RDKit, we calculated Lipinski descriptors for each drug based on its SMILES representation, including Molecular Weight (MW), LogP, Number of Hydrogen Bond Donors, and Number of Hydrogen Bond Acceptors.
 
 ### Model Training and Optimization
 
-1. We used PyCaret to compare various regression models and identify the best performing one for our dataset.
-2. Orthogonal Matching Pursuit (OMP) was selected as the best model based on PyCaret's evaluation.
-3. We split the data into training (80%) and test (20%) sets.
-4. The OMP model was further optimized using GridSearchCV to find the best hyperparameters, specifically the number of non-zero coefficients.
+PyCaret was employed to compare various regression models, leading to the selection of Orthogonal Matching Pursuit (OMP) as the best performing model; the data was then split into training (80%) and test (20%) sets, and the OMP model was further optimized using GridSearchCV to determine the optimal number of non-zero coefficients.
 
 ### Model Evaluation
 
-We evaluated the optimized model using three metrics:
-1. Mean Squared Error (MSE)
-2. R-squared (R²)
-3. Mean Absolute Error (MAE)
+The optimized model was evaluated using three metrics: Mean Squared Error (MSE), R-squared (R²), and Mean Absolute Error (MAE).
 
 ### Prediction and Visualization
 
-1. We used the optimized model to predict IC50 values for the entire dataset.
-2. A scatter plot was created to visualize the relationship between actual and predicted IC50 values.
-3. The correlation coefficient between actual and predicted IC50 values was calculated.
+The optimized model was used to predict IC50 values for the entire dataset, after which a scatter plot was created to visualize the relationship between actual and predicted IC50 values, and the correlation coefficient between these values was calculated.
 
 ## Results and Interpretation
 
