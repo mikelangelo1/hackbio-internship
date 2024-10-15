@@ -84,7 +84,7 @@ This study aims to:
 
 ### 2.1 Protein Structure Preparation
 
-We obtained three-dimensional structures of all 11 HDAC subtypes from the Protein Data Bank (PDB). For HDAC subtypes lacking experimental structures (HDAC10 and HDAC11), we performed homology modeling using Swiss-Model. The PDB IDs used for each HDAC subtype are as follows:
+We obtained three-dimensional structures of all 11 HDAC subtypes from the Protein Data Bank (PDB). For HDAC subtypes lacking experimental structures (HDAC10 and HDAC11), we performed homology modeling using Alphafold. The PDB IDs used for each HDAC subtype are as follows:
 
 | HDAC Subtype | PDB ID |
 |--------------|--------|
@@ -208,20 +208,36 @@ Key conclusions include:
 2. Subtype-selective binding was observed for some compounds, offering potential leads for the development of more targeted HDAC inhibitors.
 3. The combination of natural product screening and in silico modeling presents a promising approach for identifying novel HDAC inhibitors with potentially reduced side effects.
 
-Future work should focus on:
-1. Experimental validation of the most promising compounds identified in this study through in vitro HDAC inhibition assays.
-2. Structure-activity relationship (SAR) studies to optimize lead compounds for improved potency and selectivity.
-3. Molecular dynamics simulations to better understand the stability and dynamics of ligand-HDAC interactions.
-4. Investigation of synergistic effects between phytochemicals and known HDAC inhibitors.
-
 This study provides a robust foundation for future research into novel HDAC inhibitors, potentially leading to more effective and less toxic cancer therapies.
 
-## References
+## 5.0 Appendix
 
-1. Seto, E., & Yoshida, M. (2014). Erasers of histone acetylation: the histone deacetylase enzymes. Cold Spring Harbor perspectives in biology, 6(4), a018713.
-2. Falkenberg, K. J., & Johnstone, R. W. (2014). Histone deacetylases and their inhibitors in cancer, neurological diseases and immune disorders. Nature reviews Drug discovery, 13(9), 673-691.
-3. Trott, O., & Olson, A. J. (2010). AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading. Journal of computational chemistry, 31(2), 455-461.
-4. Waterhouse, A., Bertoni, M., Bienert, S., Studer, G., Tauriello, G., Gumienny, R., ... & Schwede, T. (2018). SWISS-MODEL: homology modelling of protein structures and complexes. Nucleic acids research, 46(W1), W296-W303.
-5. Wang, Z., Qin, G., & Zhao, T. C. (2014). HDAC4: mechanism of regulation and biological functions. Epigenomics, 6(1), 139-150.
+### 5.1 Supplementary Materials
 
-[Note: Additional references would be added to cover all aspects of the study, including sources for the phytochemicals and known HDAC inhibitors used.]
+The detailed implementation of the machine learning model and data analysis procedures are available in the following supplementary files:
+
+1. **Machine Learning Model Implementation**: 
+   A comprehensive Jupyter Notebook detailing data preprocessing, feature selection, model training, and evaluation.
+   [View Jupyter Notebook](/stage-4/Phase-1/code.ipynb)
+
+2. **Data Analysis and Visualization**: 
+   Source code for data analysis and generation of the binding affinity heatmap.
+   [View Python Script](/stage-4/Phase-2/binding_affinity_heatmap.py)
+
+## 6.0 References
+
+1. Baselious, F., Hilscher, S., Hagemann, S., Tripathee, S., Robaa, D., Barinka, C., Hüttelmaier, S., Schutkowski, M., & Sippl, W. (2024). Utilization of an optimized AlphaFold protein model for structure-based design of a selective HDAC11 inhibitor with anti-neuroblastoma activity. *Archiv der Pharmazie*, e2400486. https://doi.org/10.1002/ardp.202400486
+
+2. Smith, M. (2003). Therapeutic applications of fenugreek. *Alternative Medicine Review*, 8(1), 20-27.
+
+3. Wani, S. A., & Kumar, P. (2018). Fenugreek: A review on its nutraceutical properties and utilization in various food products. *Journal of the Saudi Society of Agricultural Sciences*, 17(2), 97-106. https://doi.org/10.1016/j.jssas.2016.04.006
+
+4. Kim, J., & Bae, C. (2011). Histone deacetylase inhibitors: Molecular mechanisms of action and clinical trials as anti-cancer drugs. *American Journal of Translational Research*, 3(2), 166-179.
+
+5. Eckschlager, T., Plch, J., Stiborova, M., & Hrabeta, J. (2017). Histone Deacetylase Inhibitors as Anticancer Drugs. *International Journal of Molecular Sciences*, 18(7), 1414. https://doi.org/10.3390/ijms18071414
+
+6. Shanmugam, G., Rakshit, S., & Sarkar, K. (2022). HDAC inhibitors: Targets for tumor therapy, immune modulation, and lung diseases. *Translational Oncology*, 16, 101312. https://doi.org/10.1016/j.tranon.2021.101312
+
+7. Bondarev, A. D., Attwood, M. M., Jonsson, J., Chubarev, V. N., Tarasov, V. V., & Schiöth, H. B. (2021). Recent developments of HDAC inhibitors: Emerging indications and novel molecules. *British Journal of Clinical Pharmacology*, 87(12), 4577-4597. https://doi.org/10.1111/bcp.14889
+
+8. Li, G., Tian, Y., & Zhu, W. (2020). The Roles of Histone Deacetylases and Their Inhibitors in Cancer Therapy. *Frontiers in Cell and Developmental Biology*, 8, 576946. https://doi.org/10.3389/fcell.2020.576946
