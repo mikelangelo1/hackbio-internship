@@ -101,6 +101,8 @@ Molecular docking was performed using AutoDock Vina. The docking grid was center
 
 Docking scores from triplicate runs were averaged, and standard deviations were calculated. A heatmap was generated using the mean docking scores to visualize binding affinities across all ligand-protein pairs. The best-scoring poses were analyzed for key interactions using PyMOL.
 
+![Heatmap of average_binding_affinity across 11 HDAC subtypes](./stage-4/images/Heatmap_average_binding_affinity.png) 
+
 ## 3. Results and Discussion
 
 ### 3.1 Docking Score Analysis
